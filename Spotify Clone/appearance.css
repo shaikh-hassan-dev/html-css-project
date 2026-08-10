@@ -1,0 +1,8 @@
+/* appearance is a some property which is already set by the chrome like 
+for range input it is set as black background blue pointer etc
+to customize set appearance:none; */
+/* read at : https://www.quirksmode.org/blog/archives/2015/11/styling_and_scr.html */
+
+/* background is called as track and poiter is called thumb (pseudo elements) */
+/* for thumb : -webkit-slider-thumb or -ms-thumb */
+/* for track : -webkit-slider-runnable-track or -ms-track */
