@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-font: "Edu NSW ACT Cursive", cursive;
+    --secondary-font: "Roboto Slab", serif;
+    --thirt-font: "Roboto", sans-serif;
+}
+
+body {
+    /* background-image: linear-gradient(to bottom,#020617,#253f7b, #6688c0); */
+    background-image: 
+    linear-gradient(
+        180deg,
+        #020617 0%,
+        #253f7b 40%,
+        #547fc5 100%
+    );
+}
+
+nav {
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+    /* background-color: rgb(130, 130, 174); */
+    background-image: linear-gradient(90deg,#0B1120,#020617,#111827);
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: #BFDBFE;;
+    font-family: var(--primary-font)
+}
+
+nav ul{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    font-size: 15px;
+    color: aliceblue;
+    font-family: var(--thirt-font)
+}
+
+.hero{
+    height: 85vh;
+    /* background-image: 
+    linear-gradient(
+        180deg,
+        #020617 0%,
+        #253f7b 40%,
+        #6688c0 100%
+    ); */
+    /* background-image: linear-gradient(to right,#161a94,#281e89, #33315c); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--third-font);
+}
+
+.hero-left{
+    font-size: 40px;
+    color: #FFFFFF;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-left .one{
+    font-size: 50px;
+    color: rgb(32, 3, 58);
+    font-weight: bolder;
+}
+
+.hero-lef .two {
+    color: E2E8F0;
+}
+
+.hero-right {
+    font-size: 65px;
+    font-weight: bolder;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.btn {
+    font-weight: bold;
+    padding: 8px 15px;
+    background: 2563EB;
+    border: 2px solid #93C5FD;
+    border-radius: 12px;
+    color: #93C5FD;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0px 15px;
+    transition: all 0.5s ease;
+}
+
+.btn:hover{
+    background-color: rgba(147,197,253,.15);
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px 0 rgba(18, 94, 117, 0.2); ;
+}
+
+.projects {
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    font-family: var(--secondary-font);
+}
+
+.projects .project {
+    display: flex;
+    align-items: center;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 40px;
+    background-color: aqua;
+}
+
+.project:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.project .project-img img{
+    width: 40vw;
+}
+
+.project-info {
+    margin: 0px 20px;
+    padding: 20px;
+}
+
+.project-info p{
+    padding: 10px;
+}
+
+.project-info .btn {
+    margin: 20px 0px;
+}
+
+.section-head {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: var(--primary-font);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, #190101, transparent);
+}
+
+footer {
+    font-family: var(--third-font);
+    font-size: 18px;
+    color: aliceblue;
+    background-color: #0B1120;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 950px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .hero-left {
+        margin: 0;
+    }
+    .hero-right img{
+        height: 250px;
+        width: 250px;
+    }
+
+    .project-img img{
+        height: 90%;
+        width: 100px;
+    }
+}
